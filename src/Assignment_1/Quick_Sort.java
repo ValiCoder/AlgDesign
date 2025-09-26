@@ -1,3 +1,5 @@
+package Assignment_1;
+
 public class Quick_Sort {
 
     public static void quickSort(int[] arr, int low, int high) {
@@ -29,17 +31,10 @@ public class Quick_Sort {
     }
 
     public static void main(String[] args) {
-        int[] numbers = {10, 7, 8, 9, 1, 5};
+        int[] array = {10, 7, 8, 9, 1, 5};
 
-        System.out.println("Unsorted array:");
-        for (int num : numbers) {
-            System.out.print(num + " ");
-        }
-
-        quickSort(numbers, 0, numbers.length - 1);
-
-        System.out.println("\nSorted array:");
-        for (int num : numbers) {
+        quickSort(array, 0, array.length - 1);
+        for (int num : array) {
             System.out.print(num + " ");
         }
     }
